@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [20.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -21,4 +21,4 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: sh ./build.sh
+    - run: sh ./scripts/build.sh
