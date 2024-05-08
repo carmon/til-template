@@ -1,4 +1,7 @@
-cd blog
+#!/bin/bash
+cd $(dirname $0)
+
+cd ../blog
 
 if [ -f "index.html" ]; then
     npx http-server .

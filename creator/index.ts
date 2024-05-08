@@ -31,7 +31,7 @@ const createBlog = async () => {
     const template = await promises.readFile(INDEX_TEMPLATE);
     const html = Buffer.from(template).toString();
 
-    const tags = res.reduce((prev, { tag }) => {
+    const tags = res.reduce((prev: string[], { tag }) => {
         if (!tag) return prev;
         if (prev.includes(tag)) return prev;
 
