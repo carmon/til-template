@@ -1,6 +1,10 @@
 til-template
 ============
 
+This is the template repository for a blog.
+
+## How does it work
+
 ## /creator
 
 Creator takes a `dates.json` (repo comes with an example) and recreates the posts with order of date, this 

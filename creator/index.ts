@@ -85,7 +85,8 @@ const createBlog = async () => {
     };
     </script>`;
     const begin = '<div class="blog">';
-    const header = '<h1>TIL - a personal blog</h1><h2>by Carmon <a href="https://github.com/carmon/til">check repo</a></h2>';
+    // TODO: header URL should be pointing target repo
+    const header = '<h1>TIL - a personal blog</h1><h2>by Carmon <a href="https://github.com/carmon/til-template">check repo</a></h2>';
     const markdowns = res.reduce(
         (prev, curr) => {
             const { date, name, tag } = curr;
